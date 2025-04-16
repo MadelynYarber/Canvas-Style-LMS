@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI.Canvas.views.StudentOptionView"
+             Title="StudentOptionView"
+             NavigatedTo="ContentPage_NavigatedTo">
+    <VerticalStackLayout>
+        <Label 
+            FontSize="25"
+            Text="Hello Student! Click on your name"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Entry Text="{Binding Query}" Grid.Column="0"/>
+            <Button Text="Search" Clicked="SearchClicked"  Grid.Column="1"/>
+        </Grid>
+
+        <ListView  
+        ItemsSource="{Binding Students}"
+        SelectedItem="{Binding SelectedStudent}">
+        </ListView>
+        <Button Text="This is Me" Clicked="StudentPickedClicked"/>
+        <!--I could have it that before/after hitting "This is me, 
+        I have to type student Id to get to next page-->
+        <Button Text="Submit Assignment" Margin="0, 30, 0, 5" Clicked="SubmitAssignClicked"/>
+        <Button Text="Back" Clicked="BackClicked"/>
+    </VerticalStackLayout>
+</ContentPage>

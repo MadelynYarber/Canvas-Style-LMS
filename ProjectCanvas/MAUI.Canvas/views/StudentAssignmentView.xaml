@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI.Canvas.views.StudentAssignmentView"
+             Title="StudentAssignmentView"
+             NavigatedTo="ContentPage_NavigatedTo">
+    <VerticalStackLayout>
+        <Label 
+            Text="Assignments!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <ListView  
+            ItemsSource="{Binding assignments}"
+            SelectedItem="{Binding SelectedAssignment}">
+        </ListView>
+
+
+        <Button Text="Submit This Assignment" Clicked="SubmitClicked"/>
+        <Button Text="Cancel" Clicked="CancelClicked"/>
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI.Canvas.views.InstructorPickView"
+             Title="InstructorPickView">
+    <VerticalStackLayout>
+        <Label 
+           Text="INSTUCTOR VIEW!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Button Text="Students" Margin="0, 2" Clicked="StudentTabClicked"/>
+        <Button Text="Courses" Margin="0, 2" Clicked="CourseTabClicked"/>
+        <Button Text="Create and View Assignments" Margin="0, 2" Clicked="AssignmentsClicked"/>
+        <!--Button for Modules and Assignments-->
+        <Button Text="Back" Margin="0, 2" Clicked="BackClicked"/>
+    </VerticalStackLayout>
+</ContentPage>

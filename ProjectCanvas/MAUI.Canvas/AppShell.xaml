@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MAUI.Canvas.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MAUI.Canvas"
+    xmlns:local2="clr-namespace:MAUI.Canvas.views"
+    xmlns:local3="clr-namespace:MAUI.Canvas.dialogs"
+    Shell.FlyoutBehavior="Disabled"
+    Title="MAUI.Canvas">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+    <ShellContent
+        Title="Student View"
+        ContentTemplate="{DataTemplate local2:StudentsView}"
+        Route="Students" />
+    <ShellContent
+        Title="Student Details"
+        ContentTemplate="{DataTemplate local3:StudentDialog}"
+        Route="StudentDetail" />
+    <ShellContent
+        Title="Instructor Picks View"
+        ContentTemplate="{DataTemplate local2:InstructorPickView}"
+        Route="InstructorPick" />
+    <ShellContent
+        Title="Course View"
+        ContentTemplate="{DataTemplate local2:CourseView}"
+        Route="Courses" />
+    <ShellContent
+        Title="Course Details"
+        ContentTemplate="{DataTemplate local3:CourseDialog}"
+        Route="CourseDetail" />
+    <ShellContent
+        Title="Student Submit Assignment"
+        ContentTemplate="{DataTemplate local2:SubmitAssignmentView}"
+        Route="SubmitAssign" />
+    <ShellContent
+        Title="Student Option"
+        ContentTemplate="{DataTemplate local2:StudentOptionView}"
+        Route="StudentOption" />
+    <ShellContent
+        Title="Student Picked Themselves"
+        ContentTemplate="{DataTemplate local3:PickedStudentDialog}"
+        Route="PickedStudentDialog" />
+    <ShellContent
+        Title="Link Student to course"
+        ContentTemplate="{DataTemplate local2:LinkStudentView}"
+        Route="LinkStudent" />
+    <ShellContent
+    Title="Create Assignment"
+    ContentTemplate="{DataTemplate local2:CreateAssignmentView}"
+    Route="CreateAssignment" />
+    <ShellContent
+    Title="Module Details"
+    ContentTemplate="{DataTemplate local3:ModuleDialog}"
+    Route="ModuleDialog" />
+    <ShellContent
+      Title="View Course Details"
+      ContentTemplate="{DataTemplate local3:ViewCourseDialog}"
+      Route="ViewCourse"/>
+    <ShellContent
+    Title="View Assignment Test"
+    ContentTemplate="{DataTemplate local2:ViewAssignments}"
+    Route="View" />
+    <ShellContent
+    Title="Student Assignment View"
+    ContentTemplate="{DataTemplate local2:StudentAssignmentView}"
+    Route="StudentAssignment" />
+    <ShellContent
+    Title="View Submissions"
+    ContentTemplate="{DataTemplate local3:ViewSubmissions}"
+    Route="ViewSubmissions"/>
+
+    
+
+</Shell>

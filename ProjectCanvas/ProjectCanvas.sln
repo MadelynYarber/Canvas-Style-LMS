@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectCanvas", "ProjectCanvas\ProjectCanvas.csproj", "{28F2D5C1-F10E-4B3B-9742-A1FFF8B399E7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.ProjectCanvas", "Library.ProjectCanvas\Library.ProjectCanvas.csproj", "{213F5A28-AB6F-41F4-BCC1-ABADD2697F6D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MAUI.Canvas", "MAUI.Canvas\MAUI.Canvas.csproj", "{7C12B643-BB40-4FF7-B1CA-E09D36CB1575}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28F2D5C1-F10E-4B3B-9742-A1FFF8B399E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28F2D5C1-F10E-4B3B-9742-A1FFF8B399E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28F2D5C1-F10E-4B3B-9742-A1FFF8B399E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28F2D5C1-F10E-4B3B-9742-A1FFF8B399E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{213F5A28-AB6F-41F4-BCC1-ABADD2697F6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{213F5A28-AB6F-41F4-BCC1-ABADD2697F6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{213F5A28-AB6F-41F4-BCC1-ABADD2697F6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{213F5A28-AB6F-41F4-BCC1-ABADD2697F6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C12B643-BB40-4FF7-B1CA-E09D36CB1575}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C12B643-BB40-4FF7-B1CA-E09D36CB1575}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C12B643-BB40-4FF7-B1CA-E09D36CB1575}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7C12B643-BB40-4FF7-B1CA-E09D36CB1575}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C12B643-BB40-4FF7-B1CA-E09D36CB1575}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C12B643-BB40-4FF7-B1CA-E09D36CB1575}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D4B9869D-015D-49EC-B898-00C4C5C58D95}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI.Canvas.dialogs.ModuleDialog"
+             Title="ModuleDialog"
+             NavigatedTo="ContentPage_NavigatedTo">
+    <VerticalStackLayout>
+        <Label 
+            Text="Module"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <ListView  
+        ItemsSource="{Binding Modules}" Margin="0, 60">
+        </ListView>
+
+        <Label 
+        FontSize="25"
+        Text="Add A Module"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center"/>
+        
+        <Grid Margin="0, 10">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Module Name: " Grid.Column="0" Grid.Row="0"/>
+            <Entry Text="{Binding Name}" Grid.Column="1" Grid.Row="0"/>
+            <Label Text="Module Description: " Grid.Column="0" Grid.Row="1"/>
+            <Entry Text="{Binding Desc}" Grid.Column="1" Grid.Row="1"/>
+            <Label Text="Class ID the Module goes in: " Grid.Column="0" Grid.Row="2"/>
+            <Entry Text="{Binding CourseId}" Grid.Column="1" Grid.Row="2"/>
+            <Label Text="Student ID the Module goes to: " Grid.Column="0" Grid.Row="3"/>
+            <Entry Text="{Binding StudentId}" Grid.Column="1" Grid.Row="3"/>
+
+
+        </Grid>
+
+        <Button Text="Add Module" Margin="0, 10" Clicked="AddModuleClicked"/>
+        <Button Text="Cancel" Margin="0, 10" Clicked="BackClicked"/>
+    </VerticalStackLayout>
+</ContentPage>
